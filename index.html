@@ -6,6 +6,7 @@
     <title>Unity WebGL Player | NymphPornGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -57,11 +58,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/3stage.loader.js";
+      var loaderUrl = buildUrl + "/tg.loader.js";
       var config = {
-        dataUrl: buildUrl + "/3stage.data",
-        frameworkUrl: buildUrl + "/3stage.framework.js",
-        codeUrl: buildUrl + "/3stage.wasm",
+        dataUrl: buildUrl + "/tg.data",
+        frameworkUrl: buildUrl + "/tg.framework.js",
+        codeUrl: buildUrl + "/tg.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "NymphPornGame",
@@ -118,6 +119,5 @@
       document.body.appendChild(script);
 
     </script>
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
   </body>
 </html>
